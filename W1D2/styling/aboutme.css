@@ -1,0 +1,59 @@
+body {
+    background: #3c3c3c;
+    color: aliceblue;
+}
+
+h1 {
+    font-size: 36pt;
+    color: rgb(62, 153, 214);
+}
+
+p {
+    color: aliceblue;
+}
+
+p span {
+    color: yellow;
+}
+
+h2 {
+    color: rgb(62, 153, 214);
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+a {
+    color: red;
+}
+
+span {
+    font-style: italic;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p::first-letter {
+    font-size: 20px;
+}
+
+dl {
+    margin-top: 5px;
+}
+
+dt {
+    color: yellow;
+}
+
+#validator>img{
+    width: 10%;
+    height: 50px;
+}

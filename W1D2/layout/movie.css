@@ -145,3 +145,14 @@ ul {
     border-bottom-right-radius: 20px;
 
 }
+
+#validation {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+#tmnt-page{
+    position: relative;
+}

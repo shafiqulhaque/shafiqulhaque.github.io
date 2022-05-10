@@ -1,35 +1,35 @@
 //Assignment Q-1
-function max(x,y){
+function max(x, y) {
     //return x > y ? x : y;
-    if (x>y) {
+    if (x > y) {
         return x;
-      } else {
-          return y;
+    } else {
+        return y;
     }
 }
-alert(max(8,6));
+alert(max(8, 6));
 
 // -----------------------------------------------------
 
 // Assignment Q-2
-function max(x,y,z){  
-    if (x>y & x>z) {
+function max(x, y, z) {
+    if (x > y & x > z) {
         return x;
-    } else if (y>z & y>x){
-          return y;
-    } else{
+    } else if (y > z & y > x) {
+        return y;
+    } else {
         return z;
     }
 }
-alert(max(131,21,172));
+alert(max(131, 21, 172));
 // ---------------------------------
 
 //Assignment Q-3
-function isVowel(argument){
-	var text;
-	var argument = argument.toLowerCase();
+function isVowel(argument) {
+    var text;
+    var argument = argument.toLowerCase();
     var vowels = (['a', 'e', 'i', 'o', 'u']);
-    for (var i = 0; i <= vowels.length; i++){
+    for (var i = 0; i <= vowels.length; i++) {
         if (argument != vowels[i]) {
             continue;
         }
@@ -39,29 +39,29 @@ function isVowel(argument){
 }
 var char = "E"; // give your string here
 if (isVowel(char)) {
-	//console.log(char + " is a vowel");
+    //console.log(char + " is a vowel");
     alert(char + " is a vowel");
 } else {
-	//console.log(char + " is not a vowel");
+    //console.log(char + " is not a vowel");
     alert(char + " is not a vowel");
 }
 // ---------------------------------
 //Assignment Q-4
-function multi(){
+function multi() {
     let s = 1;
     let array = [1, 2, 3, 4];
-    for (let i = 0; i <= array.length-1; i++){       
+    for (let i = 0; i <= array.length - 1; i++) {
         s = s * array[i];
     }
     return s;
 }
 alert(multi());
 
-function sum(){
+function sum() {
     let s = 0;
     let array = [1, 2, 3, 4];
 
-    for (let i = 0; i <= array.length-1; i++){       
+    for (let i = 0; i <= array.length - 1; i++) {
         s = s + array[i];
     }
 
@@ -71,9 +71,9 @@ alert(sum());
 // ---------------------------------
 
 //Assignment Q-5
-function reverse(str){
+function reverse(str) {
     let s = "";
-    for (let i = str.length-1; i >= 0; i--){       
+    for (let i = str.length - 1; i >= 0; i--) {
         s += str[i];
     }
     return s;
@@ -81,15 +81,15 @@ function reverse(str){
 alert(reverse("jag testar"));
 // ---------------------------------
 // Assignment Q-6
-  
-function findLongestWordLength(arr){ 
-    let test = ['Ap', 'Banana', 'Coke', 'Egg']; 
-    let longest=test[0];
-    
+
+function findLongestWordLength(arr) {
+    let test = ['Ap', 'Banana', 'Coke', 'Egg'];
+    let longest = test[0];
+
     for (var i = 1; i < test.length; i++) {
-        if ( longest.length < test[i].length ) {
+        if (longest.length < test[i].length) {
             longest = test[i];
-        }       
+        }
     }
     return longest;
 }
@@ -98,7 +98,7 @@ alert(findLongestWordLength(test));
 // ---------------------------------
 // Assignment Q-7
 // function filterLongWords(){
-    
+
 // }
 // ---------------------------------
 //Assignment Q-8
@@ -120,11 +120,9 @@ const only3Data = a.filter(function (e, i, array) {
 document.writeln("Filter only 3 : " + only3Data.toString() + "<br/>");
 
 //c) return the product of all elements;
-const productOfElement = a.reduce(function (prevValue, e, i, array){
+const productOfElement = a.reduce(function (prevValue, e, i, array) {
     return prevValue * e;
 })
 document.writeln("Product : " + productOfElement);
 // ---------------------------------
-
-
 

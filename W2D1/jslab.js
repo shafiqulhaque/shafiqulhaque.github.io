@@ -1,10 +1,10 @@
 x = 1;
 var a = 5;
 var b = 10;
-var c = function(a, b, c) {
+var c = function (a, b, c) {
     console.log(x); // x is declere and initilize within this function so the result is undefined. If x veribale is not declare in this function then it contains globla x value.
     console.log(a); // print 8, reason is parameters name is a, so it's called parameters a
-    var f = function(a, b, c) {
+    var f = function (a, b, c) {
         b = a;
         console.log("b: " + b); // Print 8, because a and b value come from function parameters, not global one, argument. it's not effected on global one. 
         b = c;
@@ -48,29 +48,29 @@ xFunc();
 
 
 //4.
-    // a. 81
-    // b. 25
+// a. 81
+// b. 25
 
 var xx = 9;
 function myFunction() {
     return xx * xx;
 }
-console.log(myFunction()); 
+console.log(myFunction());
 // x is a global veriable, and its contains 9, so the result is 81
 xx = 5;
-console.log(myFunction());  
+console.log(myFunction());
 // above replace x value with 5, so the result is 25
 
 
 // 5. 
-    // 10 foo veriable is declare on bar function, so it's not effected on global one. so the alert result is 10.
+// 10 foo veriable is declare on bar function, so it's not effected on global one. so the alert result is 10.
 
-    var foo = 1;
-    function bar() {
-        console.log(foo);
-        if(!foo) {
-            var foo = 10;
-        }
-        alert(foo);
+var foo = 1;
+function bar() {
+    console.log(foo);
+    if (!foo) {
+        var foo = 10;
     }
-    bar();
+    alert(foo);
+}
+bar();

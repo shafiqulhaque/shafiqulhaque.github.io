@@ -1,10 +1,15 @@
-// Assignment Instructions-01
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout,
-});
+// Assignment Instructions-02
 
-readline.question('What is your Name? ', name => {
-    console.log('Welcome ${name}');
-    readline.close();
-});
+let sum = 0;
+let getNumber = function () {
+    readline.question('Enter Integer number or type stop :', function (answer) {
+        if (answer == 'stop') {
+            console.log("Total result is: " + sum)
+        } else {
+            sum += parseFloat(answer);
+            getNumber();
+        }
+    });
+};
+
+getNumber();

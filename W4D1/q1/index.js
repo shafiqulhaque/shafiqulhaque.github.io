@@ -9,7 +9,6 @@ app.use(cookieParser());
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "templates/view"))
 
-
 app.get('/', (req, res) => {
     res.render("tableList", {
         cookies: req.cookies,
